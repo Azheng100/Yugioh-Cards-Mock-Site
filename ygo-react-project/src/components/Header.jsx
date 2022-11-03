@@ -1,7 +1,11 @@
+import Nav from "./Nav"
+
+
 const Header=()=>{
     return(
         <div className="header">
-        <h2>testing 2</h2>
+        <h2>Welcome to the Shadow Realm</h2>
+        <Nav/>
         </div>
     )
 }
