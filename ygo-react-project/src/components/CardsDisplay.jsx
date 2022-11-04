@@ -1,7 +1,22 @@
 
 import { useNavigate } from 'react-router-dom'
+import{ useState, useEffect } from 'react'
+import axios from 'axios'
 
-export default function CardsDisplay(props){
+export default function CardsDisplay(){
+    const [cards, setCards] = useState(null)
+
+    useEffect(()=>{
+
+        const getData= async()=>{
+            const response =await axios.get('https://db.ygoprodeck.com/api/v7/cardinfo.php')
+            setCards(response.data.data)
+            
+        }
+        getData()
+    },[])
+   
+
     //need to create a state for our data 
     //we need to call an axios function
     //we need to set state of our data
@@ -13,17 +28,16 @@ const showCards=(cards)=>{
 }
 
 
-if(!props.cards){
+if(!cards){
     return <h2>Loading....</h2>
 }else{
     return(
-        // <h2>hello</h2>
         <div>
         {
-            props.cards.map((cards)=>(
-            <div key={cards.name} className='cardlist' onClick={()=>showCards(cards)}>
+            cards.map((card)=>(
+            <div key={card.name} className='cardlist' onClick={()=>showCards(card)}>
 
-            <h2>{cards.name} </h2>
+            <h2>{card.name} </h2>
             </div>
             ))
         }
