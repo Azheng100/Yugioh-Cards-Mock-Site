@@ -69,3 +69,18 @@ h1{
 .setname{
   color: yellow;
 }
+
+.disclaimer{
+  font-size: 30px;
+}
+
+.cardeff{
+  color: darkblue;
+  font-style: italic;
+  display: inline-grid;
+  border: 3px solid black;
+  padding: 50px;
+  max-width: 50%;
+  background-color: lightgray;
+  
+}

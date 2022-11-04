@@ -40,8 +40,8 @@ const CardDetails = () => {
             {!cards.archetype ? null: <h4> Archeytpe: {cards.archetype}</h4>}
             {!cards.def ? null: <h4>{cards.atk} Atk / {cards.def} Def</h4>}
             {cards.type == 'Link Monster' ? <h4>{cards.atk} Atk</h4>:null}
-             <h4>Type: {cards.race} {cards.type} </h4>
-             <h4>{cards.desc}</h4>
+             <h4>Type: {cards.attribute} {cards.race} {cards.type} </h4>
+             <h4 className='cardeff'>{cards.desc}</h4>
              {!cards.card_prices ? null: <h1>Price: {cards.card_prices[0].tcgplayer_price} dollars!</h1>}
             
 
