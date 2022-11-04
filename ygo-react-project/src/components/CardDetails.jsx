@@ -19,7 +19,6 @@ const CardDetails = () => {
      console.log(selectedCards)
       setCards(selectedCards)
       
-      
       }
 
     useEffect(()=>{
@@ -28,31 +27,36 @@ const CardDetails = () => {
       },[])
   
       
-    return cards ? (
+    return (cards) ? (
     <div className="carddetail">{
 
         
             <div key={cards.name}>
-             <h2>{cards.name}</h2>
+             {!cards.card_sets ? null: <h2 className='setname'>{cards.card_sets[0].set_name}</h2>}
+             <h2 className='cardname'>{cards.name}</h2>
+        
             <img src={cards.card_images[0].image_url}/>
-             <h4>Type: {cards.type} & {cards.race} </h4>
-             <h4>Effect: {cards.desc}</h4>
-             {/* <h2>{cards.card_sets[0].set_name}</h2> */}
-             <h2>Price: {cards.card_prices[0].tcgplayer_price} dollars</h2>
+            {!cards.banlist_info ? null:<h4>{cards.banlist_info.ban_tcg}</h4>}
+            {!cards.archetype ? null: <h4> Archeytpe: {cards.archetype}</h4>}
+            {!cards.def ? null: <h4>{cards.atk} Atk / {cards.def} Def</h4>}
+            {cards.type == 'Link Monster' ? <h4>{cards.atk} Atk</h4>:null}
+             <h4>Type: {cards.race} {cards.type} </h4>
+             <h4>{cards.desc}</h4>
+             {!cards.card_prices ? null: <h1>Price: {cards.card_prices[0].tcgplayer_price} dollars!</h1>}
             
 
              </div>
 
         
     }
-  <div className='buy'>
-    <button>Add to Cart</button>
+  <div>
+    <button className='buy'>Add to Cart</button>
     
   </div>
                 
   <div className='returnbutton'>
-  <button ><Link to='/'> Home </Link> </button>
-  <button ><Link to='/CardsDisplay'> Back </Link> </button>
+  <button className='tohome'><Link to='/'> Home </Link> </button>
+  <button className='tocards'><Link to='/CardsDisplay'> Back </Link> </button>
   </div>
 </div>
 ) : <div>loading</div>;

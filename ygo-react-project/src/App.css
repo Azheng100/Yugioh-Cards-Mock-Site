@@ -14,18 +14,58 @@
 
 .nav{
   font-size: 25px;
+  display: flex;
+  background-color: crimson;
+  color: yellow;
+  justify-content: space-around;
+}
+
+.carddetail{
+  display: grid;
+  font-size: 20px;
+}
+
+h2{
+  color: white;
+}
+
+.carddetail{
+  color: white
+}
+h1{
+  color:crimson;
+  font-weight: bold;
+  font-style: oblique;
+}
+
+.buy{
+  background-color: black;
+  color: aliceblue;
+  font-size: 30px;
+}
+
+.returnbutton{
+  background-color: beige;
+  display: flex;
+  justify-content: space-around;
+}
+
+.tohome{
+  background-color: aqua;
+  font-size: 20px;
 }
 
 
+.tocards{
+  background-color: aqua;
+  font-size: 20px;
+}
 
+.cardname{
+  color: black;
+  font-size: 50px;
+}
 
-  .nav{
-    display: flex;
-    
-   justify-content: space-around;
-   
-   
-
-
-  }
-
+.setname{
+  color: yellow;
+}
