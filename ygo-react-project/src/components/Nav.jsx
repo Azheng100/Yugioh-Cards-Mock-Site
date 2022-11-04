@@ -6,6 +6,7 @@ const Nav=()=>{
         <Link to = '/'> Home</Link>
         <Link to = 'CardsDisplay'>Master Card List</Link>
         <Link to = 'Search'>Search for a card</Link>
+        <Link to = 'Cart'>Cart</Link>
 
         </div>
     )
