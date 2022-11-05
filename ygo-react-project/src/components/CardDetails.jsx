@@ -56,7 +56,7 @@ const CardDetails = () => {
                 
   <div className='returnbutton'>
   <button className='tohome'><Link to='/'> Home </Link> </button>
-  <button className='tocards'><Link to='/CardsDisplay'> Back </Link> </button>
+  <button className='tosearch'><Link to='/search'> Search </Link> </button>
   </div>
 </div>
 ) : <div>loading</div>;

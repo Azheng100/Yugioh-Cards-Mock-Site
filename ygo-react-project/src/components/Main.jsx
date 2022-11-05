@@ -18,6 +18,7 @@ export default function Main(){
                 <Route path='/search' element={<Searcher/>}/>
                 <Route path='/CardsDisplay/:name' element={<CardDetails/>}/>
                 <Route path='/Cart' element={<Cart/>}/>
+                <Route path='/search/:name' element={<CardDetails/>}/>
             </Routes>
         </div>
     )

@@ -56,7 +56,7 @@ h1{
 }
 
 
-.tocards{
+.tosearch{
   background-color: aqua;
   font-size: 20px;
 }
@@ -90,6 +90,20 @@ h1{
 }
 
 .nothidden{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  
+}
+
+.searching{
+  margin-top: 5px;
+  width: 200px;
+  height: 70px;
+  background-color: black;
+  border: 1px solid black;
+  overflow: hidden;
   display: block;
   margin-left: auto;
   margin-right: auto;

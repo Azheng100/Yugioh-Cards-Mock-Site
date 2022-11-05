@@ -11,7 +11,7 @@ export default function Home(){
         <div>
             <h2>Attention Duelists! Please browse our collection for all your dueling needs.</h2>
 
-                
+                {/* Pedtrotech video on "Manipulating the DOM In ReactJS | useRef" for button inspiration */}
                 <button onClick={()=>setIsHidden(!isHidden)}> Nyehhhhh </button>
 
                 <div>
