@@ -10,9 +10,9 @@ const Searcher=()=>{
     const handleChange =(e)=>{
         const searchWord = e.target.value
         const newFilter = cards.filter((value)=>{
-            return value.name.includes(searchWord)
+            return value.name.toLowerCase().includes(searchWord)
         })
-        setData((newFilter))
+        setData(newFilter)
     }
 
     useEffect(()=>{
