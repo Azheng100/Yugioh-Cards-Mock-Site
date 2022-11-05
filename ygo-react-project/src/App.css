@@ -112,3 +112,10 @@ h1{
 
   
 }
+
+.lob{
+  width: 200px;
+  height:200px;
+  display: flex;
+  
+}

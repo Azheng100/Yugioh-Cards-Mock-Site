@@ -4,6 +4,7 @@ import CardsDisplay from './CardsDisplay'
 import Searcher from './Search'
 import CardDetails from './CardDetails'
 import Cart from './Cart'
+import BoosterPack from './BoosterPack'
 
 
 
@@ -19,6 +20,8 @@ export default function Main(){
                 <Route path='/CardsDisplay/:name' element={<CardDetails/>}/>
                 <Route path='/Cart' element={<Cart/>}/>
                 <Route path='/search/:name' element={<CardDetails/>}/>
+                <Route path='/LOB' element={<BoosterPack/>}/>
+                <Route path='LOB/:name' element={<CardDetails/>}/>
             </Routes>
         </div>
     )
