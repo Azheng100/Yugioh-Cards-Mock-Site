@@ -88,3 +88,11 @@ h1{
 .hide{
   display: none;
 }
+
+.nothidden{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  
+}

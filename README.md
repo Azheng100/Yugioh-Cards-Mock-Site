@@ -21,9 +21,11 @@ Wireframe
 
 </picture>
 
-**[Wireframe link](https://wireframe.cc/81zfXo )
+*[Wireframe link](https://wireframe.cc/81zfXo )
 
 *[Api link](https://db.ygoprodeck.com/api/v7/cardinfo.php)
 
 
 #### credit:
+*[Learning Domanipulation for hide and display buttons](https://www.youtube.com/watch?v=8YNeCyQtPo0)
+
