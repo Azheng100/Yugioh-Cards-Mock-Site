@@ -14,7 +14,6 @@ const Searcher=()=>{
         })
         setData(newFilter)
     }
-
     useEffect(()=>{
 
         const getData= async()=>{

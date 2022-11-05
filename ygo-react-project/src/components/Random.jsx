@@ -24,8 +24,11 @@ export default function Random(){
             return(
            <div>
             
+            
             <h2>{isRandom.name}</h2>
             <img src={isRandom.card_images[0].image_url}/>
+
+
            </div>
             )
         }

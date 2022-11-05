@@ -100,13 +100,15 @@ h1{
 .searching{
   margin-top: 5px;
   width: 200px;
-  height: 70px;
+  height: 300px;
   background-color: black;
   border: 1px solid black;
   overflow: hidden;
+  overflow-y:auto;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  font-size: 13px;
 
   
 }
