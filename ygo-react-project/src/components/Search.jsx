@@ -8,7 +8,7 @@ const Searcher=()=>{
     const [cards, setCards] = useState(null)
     const [data, setData]= useState([])
     const handleChange =(e)=>{
-        const searchWord = e.target.value
+        const searchWord = e.target.value.toLowerCase()
         const newFilter = cards.filter((value)=>{
             return value.name.toLowerCase().includes(searchWord)
         })
