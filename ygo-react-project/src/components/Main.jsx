@@ -7,11 +7,10 @@ import Cart from './Cart'
 import BoosterPack from './BoosterPack'
 
 
-
 export default function Main(){
     
-   
     return(
+        
         <div>
             <Routes>
                 <Route path='/' element={<Home/>}/>
@@ -24,5 +23,6 @@ export default function Main(){
                 <Route path='LOB/:name' element={<CardDetails/>}/>
             </Routes>
         </div>
+     
     )
 }
