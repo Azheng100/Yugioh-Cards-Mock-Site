@@ -29,5 +29,6 @@ Wireframe
 #### credit:
 *[Learning Domanipulation for hide and display buttons](https://www.youtube.com/watch?v=8YNeCyQtPo0)
 *[Learning search bar function](https://www.youtube.com/watch?v=x7niho285qs)
+[Learning useContext for shopping cart](https://www.youtube.com/watch?v=3yrMcx02jXs)
 
 

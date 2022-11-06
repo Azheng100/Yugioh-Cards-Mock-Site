@@ -48,7 +48,7 @@ const Cart=()=>{
             <button onClick={()=>cart3()}> Check out </button>
            </div>
            <div>
-                <img className={isHidden?"hide":"nothidden"} src='https://media.tenor.com/AVD09CClJFkAAAAC/yugioh-abridged-ygotas.gif'/>
+                <img className={isHidden?"hide":"nothidden"} src='https://media.tenor.com/AVD09CClJFkAAAAC/yugioh-abridged-ygotas.gif' alt="kaiba"/>
             </div>
 
             <button onClick={clear} >clear</button>

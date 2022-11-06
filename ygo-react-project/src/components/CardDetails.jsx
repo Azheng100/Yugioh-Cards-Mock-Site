@@ -27,7 +27,7 @@ const CardDetails = ({cardName, price}) => {
     useEffect(()=>{
         getCards()
         
-      },[])
+      })
   
       
     return (cards) ? (
@@ -38,11 +38,11 @@ const CardDetails = ({cardName, price}) => {
              {!cards.card_sets ? null: <h2 className='setname'>{cards.card_sets[0].set_name}</h2>}
              <h2 className='cardname'>{cards.name}</h2>
         
-            <img src={cards.card_images[0].image_url}/>
+            <img src={cards.card_images[0].image_url} alt="card"/>
             {!cards.banlist_info ? null:<h4 className='forbidden'>{cards.banlist_info.ban_tcg}</h4>}
             {!cards.archetype ? null: <h4> Archeytpe: {cards.archetype}</h4>}
             {!cards.def ? null: <h4>{cards.atk} Atk / {cards.def} Def</h4>}
-            {cards.type == 'Link Monster' ? <h4>{cards.atk} Atk</h4>:null}
+            {cards.type === 'Link Monster' ? <h4>{cards.atk} Atk</h4>:null}
              <h4>Type: {cards.attribute} {cards.race} {cards.type} </h4>
              <h4 className='cardeff'>{cards.desc}</h4>
              {cards.card_prices[0].tcgplayer_price=== '0.00' ? <h1>Item not available </h1>: <h1>Price: $ {cards.card_prices[0].tcgplayer_price}</h1>}

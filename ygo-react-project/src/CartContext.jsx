@@ -1,7 +1,7 @@
 
 import React from "react"
 import { createContext, useState } from "react"
-// export const CartContext= React.createContext()
+// watched developedbyed's React Context API Tutorial | Quick and Easy video for shopping cart inspiration for using useContext
 
 
 const CartContext= createContext()
@@ -18,7 +18,7 @@ export  function CartProvider({children}){
         setItems([])
       }
     return(
-    <CartContext.Provider value={{items , buy}}>{children}</CartContext.Provider>
+    <CartContext.Provider value={{items , buy , clear}}>{children}</CartContext.Provider>
     )
 }
 export default CartContext
