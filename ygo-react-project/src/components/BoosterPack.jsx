@@ -1,6 +1,6 @@
 import{ useState, useEffect } from 'react'
 import axios from 'axios'
-import { useNavigate } from 'react-router-dom'
+
 
 
 export default function BoosterPack(){
@@ -15,6 +15,13 @@ export default function BoosterPack(){
     let h =Math.floor(Math.random() * 125)
     let i =Math.floor(Math.random() * 125)
 
+    const [isHidden, setIsHidden] = useState(true)
+
+    function callTwo(){
+        setIsHidden(!isHidden)
+        openPack()
+    }
+
 
     const openPack= async()=>{
         const response =await axios.get('https://db.ygoprodeck.com/api/v7/cardinfo.php?cardset=legend%20of%20blue%20eyes%20white%20dragon')
@@ -26,23 +33,20 @@ export default function BoosterPack(){
             openPack()
             
         },[])
-        let navigate = useNavigate()
-
-const showPack=(isBooster)=>{
-    navigate(`${isBooster.name}`)
-}
-   
-    
+        
         if(!isBooster){
             return <h2>Loading....</h2>
         }else{
             return(
             <div>
-                <h2>Legend of the Blue Eyes White Dragon Pack</h2>
-           <div className='lob' >
-            
-            
+               <div>
+               <h2>Legend of the Blue Eyes White Dragon Pack</h2>
+                <img className={isHidden?"nothidden":"hide"} src='https://product-images.tcgplayer.com/fit-in/782x782/181266.jpg' width={220} height={400}/>
+            </div>
+                
+           <div className={isHidden?"hide":"nothidden"} >
 
+            <div className='lob' >
             
             <img src={isBooster[a].card_images[0].image_url}/>
             <img src={isBooster[b].card_images[0].image_url}/>
@@ -54,12 +58,12 @@ const showPack=(isBooster)=>{
             <img src={isBooster[h].card_images[0].image_url}/>
             <img src={isBooster[i].card_images[0].image_url}/>
 
+            </div>
+
             
-
-
            </div>
            <div>
-           <button onClick={openPack}>Open a pack</button>
+           <button className='lobbutton' onClick={callTwo}>Open a pack</button>
            </div>
            </div>
             )

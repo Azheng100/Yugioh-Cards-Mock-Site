@@ -21,7 +21,7 @@ export default function Home(){
 
             <h2>Random Card</h2>
             <Random/>
-           {/* i really want to make a random button */}
+    
 
 
 

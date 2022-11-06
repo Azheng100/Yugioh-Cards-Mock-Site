@@ -5,6 +5,10 @@ import axios from 'axios'
 // the map filter function was inspired by Pedrotech video on "Search bar in react tutorial-cool search filter tutorial." I took the master list and added in the filter to create a search bar. 
 
 const Searcher=()=>{
+    //submit button does not work as intended 
+    const handleClick=()=>{
+        setData([])
+    }
     const [cards, setCards] = useState(null)
     const [data, setData]= useState([])
     const handleChange =(e)=>{
@@ -12,7 +16,13 @@ const Searcher=()=>{
         const newFilter = cards.filter((value)=>{
             return value.name.toLowerCase().includes(searchWord)
         })
+        if(searchWord===''){
+            setData([])
+        }else{ 
         setData(newFilter)
+        }
+       
+   
     }
     useEffect(()=>{
 
@@ -43,10 +53,10 @@ if(!cards){
          
     
         
-         <button>clear</button>
+         <button onClick={handleClick}>clear</button>
         </form>
          </div>
-        {data.length !=0 && (
+        {data.length !==0 && (
             <div className='searching'>
         {
             data.map((card)=>(
