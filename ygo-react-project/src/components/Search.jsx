@@ -6,11 +6,12 @@ import axios from 'axios'
 
 const Searcher=()=>{
     //submit button does not work as intended 
+    
+    const [cards, setCards] = useState(null)
+    const [data, setData]= useState([])
     const handleClick=()=>{
         setData([])
     }
-    const [cards, setCards] = useState(null)
-    const [data, setData]= useState([])
     const handleChange =(e)=>{
         const searchWord = e.target.value.toLowerCase()
         const newFilter = cards.filter((value)=>{

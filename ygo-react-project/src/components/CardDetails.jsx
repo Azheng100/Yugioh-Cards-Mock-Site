@@ -42,7 +42,7 @@ const CardDetails = () => {
             {cards.type == 'Link Monster' ? <h4>{cards.atk} Atk</h4>:null}
              <h4>Type: {cards.attribute} {cards.race} {cards.type} </h4>
              <h4 className='cardeff'>{cards.desc}</h4>
-             {!cards.card_prices ? null: <h1>Price: {cards.card_prices[0].tcgplayer_price} dollars!</h1>}
+             {!cards.card_prices ? null: <h1>Price: $ {1+ parseFloat(cards.card_prices[0].tcgplayer_price)}!</h1>}
             
 
              </div>
