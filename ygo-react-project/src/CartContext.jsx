@@ -14,6 +14,9 @@ export  function CartProvider({children}){
         setItems((prevState)=> [...prevState, {cardName, price}])
         console.log(items)
       }
+      function clear(){
+        setItems([])
+      }
     return(
     <CartContext.Provider value={{items , buy}}>{children}</CartContext.Provider>
     )

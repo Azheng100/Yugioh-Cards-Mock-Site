@@ -9,7 +9,7 @@ const Nav=()=>{
         <button className="navbutton"><Link to = '/'> Home</Link></button>
         <button className="navbutton"><Link to = 'CardsDisplay'>Master Card List</Link></button>
         <button className="navbutton"><Link to = 'Search'>Search for a card</Link></button>
-        <button className="navbutton"><Link to = 'Cart'>Cart<span>{items.length}</span></Link></button>
+        <button className="navbutton"><Link to = 'Cart'>Cart (<span>{items.length}</span>)</Link></button>
         <button className="navbutton"><Link to = 'LOB'>Pack Simulator</Link></button>
        
 

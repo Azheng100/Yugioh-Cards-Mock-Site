@@ -9,9 +9,7 @@ const Searcher=()=>{
     
     const [cards, setCards] = useState(null)
     const [data, setData]= useState([])
-    const handleClick=()=>{
-        setData([])
-    }
+   
     const handleChange =(e)=>{
         const searchWord = e.target.value.toLowerCase()
         const newFilter = cards.filter((value)=>{
@@ -52,9 +50,7 @@ if(!cards){
      <form>
          <input type='text' placeholder="card name" onChange={handleChange}></input>
          
-    
-        
-         <button onClick={handleClick}>clear</button>
+         <button>clear</button>
         </form>
          </div>
         {data.length !==0 && (

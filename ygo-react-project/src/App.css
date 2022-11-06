@@ -139,3 +139,8 @@ h1{
   color: red;
   font-size: 50px;
 }
+
+.gridcart{
+  display: grid;
+  border: 3px solid black;
+}

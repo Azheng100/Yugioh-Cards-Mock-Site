@@ -1,26 +1,57 @@
 import CartContext from '../CartContext'
 import { useContext } from 'react'
-
+import { useState } from 'react'
 
 const Cart=()=>{
     const {items} =useContext(CartContext)
     console.log(items)
-
+    const [isHidden, setIsHidden] = useState(true)
+    const{clear} = useContext(CartContext)
+    function cart1(){
+        setIsHidden(!isHidden)
+    }
+    function cart2(){
+        alert('Thanks for testing')
+    }
+    function cart3(){
+        cart1()
+        cart2()
+    }
+    let x = 0
+    
+    function sum(){
+        for (let i=0; i<items.length; i++){
+            x += parseFloat(items[i].price)
+        }
+        return x
+    }
+    sum()
+   
     return(
         <div>
             
             <h1>Your items</h1>
-        <div>{
-           items.map((item)=>{
+        <div >{
+           items.map((item)=>(
             
-            <div key={item.cardName}>
+            <div className='gridcart' key={item.cardName}>
                 <h2>Card: {item.cardName}</h2>
-                <h2>Price: {item.price}</h2>
+                <h1 className=''>Price: $ {item.price}</h1>
 
             </div>
-           }
+            
+           )
+
         )}
-        
+        <div>
+            <h1>Total: $ {x}</h1>
+            <button onClick={()=>cart3()}> Check out </button>
+           </div>
+           <div>
+                <img className={isHidden?"hide":"nothidden"} src='https://media.tenor.com/AVD09CClJFkAAAAC/yugioh-abridged-ygotas.gif'/>
+            </div>
+
+            <button onClick={clear} >clear</button>
         </div>
         
         </div>
