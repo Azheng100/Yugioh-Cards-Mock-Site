@@ -44,7 +44,7 @@ const Cart=()=>{
 
         )}
         <div>
-            <h1>Total: $ {x}</h1>
+            <h1>Total: $ {x.toFixed(2)}</h1>
             <button onClick={()=>cart3()}> Check out </button>
            </div>
            <div>
