@@ -5,7 +5,6 @@ import axios from 'axios'
 // the map filter function was inspired by Pedrotech video on "Search bar in react tutorial-cool search filter tutorial." I took the master list and added in the filter to create a search bar. 
 
 const Searcher=()=>{
-    //submit button does not work as intended 
     
     const [cards, setCards] = useState(null)
     const [data, setData]= useState([])

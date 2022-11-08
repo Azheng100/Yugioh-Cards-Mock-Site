@@ -12,7 +12,7 @@ export  function CartProvider({children}){
     const [items, setItems] = useState([])
     const buy = (cardName,price)=>{
         setItems((prevState)=> [...prevState, {cardName, price}])
-        console.log(items)
+        
       }
       function clear(){
         setItems([])

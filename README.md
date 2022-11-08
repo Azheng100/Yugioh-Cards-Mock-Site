@@ -8,27 +8,40 @@
 ## *Description*:
 *This is simply a fan project and not an actual card selling website.*
 
-Yugioh is a popular Japanese card game made for children and played by Adults that are willing to pay for overpriced cardboard pieces. Instead of helping my fellow duelists make better financial choices, I will instead build a website that will spiral us further down in debt. As we all know, the real way to become the next YCS champion is to spend money and luck sack. Or play mystic mine. 
+Yugioh is a popular Japanese card game made for children and played by Adults that are willing to pay for overpriced cardboard pieces. Instead of helping my fellow duelists make better financial choices, I will instead build a website that will spiral us further down in debt. As we all know, the real way to become the next YCS champion is to spend money lots of money and play Ishizu Tear mirror matches with chain link 8 on turn 2 30 minutes in. Or just buy older cards to play GOAT or Edison format. 
+
+I will be using the YGOprodeck api as the card repository. The project will be built using the react js platform. Cards will be put on a master list to display all the available cards in the game. There will be a search function to expedite this process. I plan to make a mock shopping feature that will let players see how much money they would be spending on their total card purchase if they were to actually buy cards. As a bonus feature, I will make a pack opening simulator for the LOB set. I do not expect the pack simulator to accurately reflect the actual rates of pulling certain cards but it is certainly fun pressing the open cards button. 
 
 
 
 
 ### *How to get started*:
-I will be using the YGOprodeck api as the card repository. The project will be built using the react js platform. I plan to make a mock shopping feature that will let players see how much money they would be spending on their total card purchase. I want to create a search directory that will allow players to navigate through and find the cards they want. 
+You can simply fork this into your github repo and clone this on your terminal. Simply npm start under the ygo-react-project to open react. 
+
+#### *Technologies used*: 
+This was built with react js platform. I had to npm install react router dom and axios components. 
+
+##### *Contribution Guidelines*:
+The website is simply a fan project. Improvements to it would be a proper and more accurate result when opening the booster pack. The cart component has a bug where react does not like it when the same card is added to the array. However, the functionality of the cart is not harmed. 
 
 Wireframe
 <picture>
 
 </picture>
 
-*[Wireframe link](https://wireframe.cc/81zfXo )
+Component Hierarchy Diagram
+<picture>
 
-*[Api link](https://db.ygoprodeck.com/api/v7/cardinfo.php)
+</picture>
+
+[Wireframe Home page link](https://wireframe.cc/81zfXo )
+
+[Api link](https://db.ygoprodeck.com/api/v7/cardinfo.php)
 
 
-#### credit:
+###### Credit:
 *[Learning Domanipulation for hide and display buttons](https://www.youtube.com/watch?v=8YNeCyQtPo0)
 *[Learning search bar function](https://www.youtube.com/watch?v=x7niho285qs)
-[Learning useContext for shopping cart](https://www.youtube.com/watch?v=3yrMcx02jXs)
+*[Learning useContext for shopping cart](https://www.youtube.com/watch?v=3yrMcx02jXs)
 
 

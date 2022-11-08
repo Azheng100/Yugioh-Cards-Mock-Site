@@ -4,7 +4,6 @@ import { useState } from 'react'
 
 const Cart=()=>{
     const {items} =useContext(CartContext)
-    console.log(items)
     const [isHidden, setIsHidden] = useState(true)
     const{clear} = useContext(CartContext)
     function cart1(){
@@ -26,17 +25,17 @@ const Cart=()=>{
         return x
     }
     sum()
-   
     return(
+        
         <div>
             
-            <h1>Your items</h1>
+            <h1>Your Total Items: {items.length} </h1>
         <div >{
            items.map((item)=>(
             
             <div className='gridcart' key={item.cardName}>
-                <h2>Card: {item.cardName}</h2>
-                <h1 className=''>Price: $ {item.price}</h1>
+                <h2 className='cart'>Card: {item.cardName}</h2>
+                <h1 className='cart'>Price: $ {item.price}</h1>
 
             </div>
             

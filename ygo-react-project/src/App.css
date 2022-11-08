@@ -141,6 +141,14 @@ h1{
 }
 
 .gridcart{
-  display: grid;
+  display: block;
   border: 3px solid black;
+  background-color: white;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cart{
+  color: darkgreen;
 }

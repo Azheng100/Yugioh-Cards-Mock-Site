@@ -5,7 +5,7 @@ import axios from 'axios'
 import   CartContext  from '../CartContext'
 import { useContext } from 'react'
 
-const CardDetails = ({cardName, price}) => {
+const CardDetails = () => {
   const{buy} = useContext(CartContext)
     
   
@@ -19,7 +19,6 @@ const CardDetails = ({cardName, price}) => {
       
       
       let selectedCards =response.data.data.find(cards=>cards.name===name)
-     console.log(selectedCards)
       setCards(selectedCards)
       
       }
