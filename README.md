@@ -18,6 +18,8 @@ I will be using the YGOprodeck api as the card repository. The project will be b
 ### *How to get started*:
 You can simply fork this into your github repo and clone this on your terminal. Simply npm start under the ygo-react-project to open react. 
 
+You can also access the netlify site through [this link](https://azyugiohmocksite.netlify.app/ )
+
 #### *Technologies used*: 
 This was built with react js platform. I had to npm install react router dom and axios components. 
 
@@ -26,12 +28,16 @@ The website is simply a fan project. Improvements to it would be a proper and mo
 
 Wireframe
 <picture>
-
+<source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Azheng100/Yugioh-Cards-Mock-Site/main/ygoprojectwireframe.jpeg">
+ <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Azheng100/Yugioh-Cards-Mock-Site/main/ygoprojectwireframe.jpeg">
+ <img alt="YOUR-ALT-TEXT" src="https://raw.githubusercontent.com/Azheng100/Yugioh-Cards-Mock-Site/main/ygoprojectwireframe.jpeg">
 </picture>
 
 Component Hierarchy Diagram
 <picture>
-
+<source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Azheng100/Yugioh-Cards-Mock-Site/main/ygoprojectcomp.jpeg">
+ <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Azheng100/Yugioh-Cards-Mock-Site/main/ygoprojectcomp.jpeg">
+ <img alt="YOUR-ALT-TEXT" src="https://raw.githubusercontent.com/Azheng100/Yugioh-Cards-Mock-Site/main/ygoprojectcomp.jpeg">
 </picture>
 
 [Wireframe Home page link](https://wireframe.cc/81zfXo )

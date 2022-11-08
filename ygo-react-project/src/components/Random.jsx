@@ -25,7 +25,7 @@ export default function Random(){
             
         },[])
         let navigate = useNavigate()
-        const showCards=(isRandom)=>{
+        const showCards=()=>{
         navigate(`${isRandom.name}`)
 }
 
@@ -35,19 +35,18 @@ export default function Random(){
         }else{
             return(
            <div>
-               {/* {
-            Object.keys(isRandom).map((name)=>(
-            <div key={name} className='cardlist' onClick={()=>showCards(isRandom)}> */}
-
+               
             <button onClick={getRandom}>random</button>
-            <h2> {isRandom.name}</h2>
-            <img src={isRandom.card_images[0].image_url} alt='cardimage'/>
+
+            
+            <h2 onClick={showCards}> {isRandom.name}</h2>
+            <img onClick={showCards} src={isRandom.card_images[0].image_url} alt='cardimage'/>
             </div>
-            // ))
+       
+          
+        
+      
             )
         }
-            
-        
-           
         
 }
