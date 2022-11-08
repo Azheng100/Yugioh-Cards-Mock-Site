@@ -11,7 +11,6 @@ const Nav=()=>{
         <button className="navbutton"><Link to = 'Search'>Card Search</Link></button>
         <button className="navbutton"><Link to = 'Cart'>Cart (<span>{items.length}</span>)</Link></button>
         <button className="navbutton"><Link to = 'LOB'>LOB Pack Simulator</Link></button>
-       
 
         </div>
     )

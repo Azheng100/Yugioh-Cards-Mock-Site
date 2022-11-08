@@ -5,6 +5,7 @@ import Searcher from './Search'
 import CardDetails from './CardDetails'
 import Cart from './Cart'
 import BoosterPack from './BoosterPack'
+import Random from './Random'
 
 
 export default function Main(){
@@ -21,6 +22,10 @@ export default function Main(){
                 <Route path='/search/:name' element={<CardDetails/>}/>
                 <Route path='/LOB' element={<BoosterPack/>}/>
                 <Route path='LOB/:name' element={<CardDetails/>}/>
+              
+                <Route path='/:name' element={<CardDetails/>}/>
+
+
             </Routes>
         </div>
      
