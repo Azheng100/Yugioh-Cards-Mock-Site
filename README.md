@@ -24,7 +24,7 @@ You can also access the netlify site through [this link](https://azyugiohmocksit
 This was built with react js platform. I had to npm install react router dom and axios components. 
 
 ##### *Contribution Guidelines*:
-The website is simply a fan project. Improvements to it would be a proper and more accurate result when opening the booster pack. The cart component has a bug where react does not like it when the same card is added to the array. However, the functionality of the cart is not harmed. 
+The website is simply a fan project. Improvements to it would be a proper and more accurate result when opening the booster pack. The cart component has a bug where react does not like it when the same card is added to the array due to the cards sharing the same key id. However, the functionality of the cart is not harmed. Mobile view also needs to be optimized. Lasly, cards can still be bought as the price of 0 even if they are not available. 
 
 Wireframe
 <picture>
@@ -44,9 +44,11 @@ Component Hierarchy Diagram
 
 [Api link](https://db.ygoprodeck.com/api/v7/cardinfo.php)
 
+[Tello Board link](https://trello.com/b/rGKsoNgl/yugioh-card-site-react)
+
 
 ###### Credit:
-*[Learning Domanipulation for hide and display buttons](https://www.youtube.com/watch?v=8YNeCyQtPo0)
+*[Learning DOM manipulation for hide and display buttons](https://www.youtube.com/watch?v=8YNeCyQtPo0)
 *[Learning search bar function](https://www.youtube.com/watch?v=x7niho285qs)
 *[Learning useContext for shopping cart](https://www.youtube.com/watch?v=3yrMcx02jXs)
 
